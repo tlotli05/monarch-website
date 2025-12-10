@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monarch Technologies | IT Solutions & School Workshops</title>
     <meta name="description" content="Professional IT services for businesses and technology education workshops for schools across South Africa.">
     
     <!-- Preload critical resources -->
-   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-   <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/jpeg" href="google-logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
@@ -576,6 +572,228 @@
             opacity: 0.9;
         }
 
+        /* Contact Form Styles */
+        .contact-form-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .form-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-hover);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .form-header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            padding: 40px;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .form-title {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--white);
+        }
+
+        .form-subtitle {
+            font-size: 1.05rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            padding: 40px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark-blue);
+            font-size: 0.95rem;
+        }
+
+        .form-label i {
+            color: var(--accent-blue);
+            width: 16px;
+            text-align: center;
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 16px 18px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: var(--dark-gray);
+            background: var(--white);
+            transition: var(--transition);
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(58, 134, 255, 0.1);
+        }
+
+        .form-input::placeholder, .form-textarea::placeholder {
+            color: var(--medium-gray);
+            opacity: 0.7;
+        }
+
+        .form-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230A2463' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 18px center;
+            background-size: 16px;
+            padding-right: 50px;
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-counter {
+            text-align: right;
+            font-size: 0.85rem;
+            color: var(--medium-gray);
+            margin-top: 5px;
+        }
+
+        .form-error {
+            color: #dc3545;
+            font-size: 0.85rem;
+            margin-top: 5px;
+            min-height: 20px;
+        }
+
+        .form-status {
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-weight: 500;
+            text-align: center;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        .form-status.success {
+            background-color: rgba(40, 167, 69, 0.1);
+            color: #28a745;
+            border: 1px solid rgba(40, 167, 69, 0.3);
+        }
+
+        .form-status.error {
+            background-color: rgba(220, 53, 69, 0.1);
+            color: #dc3545;
+            border: 1px solid rgba(220, 53, 69, 0.3);
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .form-checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .form-checkbox:checked {
+            background-color: var(--accent-blue);
+            border-color: var(--accent-blue);
+        }
+
+        .checkbox-label {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            cursor: pointer;
+            line-height: 1.4;
+        }
+
+        .form-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .submit-btn, .reset-btn {
+            flex: 1;
+            justify-content: center;
+        }
+
+        .spinner {
+            margin-left: 10px;
+        }
+
+        .form-footer {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .form-note {
+            font-size: 0.85rem;
+            color: var(--medium-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .form-note i {
+            color: var(--accent-blue);
+        }
+
+        /* Form Validation States */
+        .form-input.error, .form-select.error, .form-textarea.error {
+            border-color: #dc3545;
+        }
+
+        .form-input.success, .form-select.success, .form-textarea.success {
+            border-color: #28a745;
+        }
+
         /* Contact Section */
         .contact-section {
             background-color: var(--light-gray);
@@ -805,6 +1023,14 @@
                 grid-template-columns: repeat(3, 1fr);
             }
             
+            .form-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .form-actions {
+                flex-direction: row;
+            }
+            
             .footer-content {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -881,8 +1107,18 @@
             }
         }
 
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
         .fade-in {
             animation: fadeUp 0.6s ease forwards;
+        }
+
+        .submit-btn:active {
+            animation: pulse 0.3s ease;
         }
 
         /* Mobile Navigation */
@@ -942,7 +1178,6 @@
             <nav class="navbar">
                 <div class="logo-container">
                     <img src="logo.jpg" alt="Monarch Technologies" class="logo" width="160" height="40" loading="eager">
-                   
                 </div>
                 
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
@@ -1058,6 +1293,117 @@
         </div>
     </section>
 
+    <!-- Contact Form Section -->
+    <div class="contact-form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h3 class="form-title">Send Us a Message</h3>
+                    <p class="form-subtitle">Get in touch with us directly using the form below. We'll respond within 24 hours.</p>
+                </div>
+                
+                <form id="contactForm" class="contact-form" action="https://formspree.io/f/mnnegopr" method="POST">
+                    <!-- Form Status Messages -->
+                    <div id="formStatus" class="form-status" style="display: none;"></div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" class="form-label">
+                                <i class="fas fa-user"></i> Full Name *
+                            </label>
+                            <input type="text" id="name" name="name" class="form-input" required 
+                                   placeholder="Enter your full name" minlength="2">
+                            <div class="form-error" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <i class="fas fa-envelope"></i> Email Address *
+                            </label>
+                            <input type="email" id="email" name="email" class="form-input" required 
+                                   placeholder="your.email@example.com">
+                            <div class="form-error" id="emailError"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone" class="form-label">
+                                <i class="fas fa-phone"></i> Phone Number
+                            </label>
+                            <input type="tel" id="phone" name="phone" class="form-input" 
+                                   placeholder="060 682 1708">
+                            <div class="form-error" id="phoneError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="serviceType" class="form-label">
+                                <i class="fas fa-briefcase"></i> Service Type *
+                            </label>
+                            <select id="serviceType" name="serviceType" class="form-select" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="business-it">Business IT Services</option>
+                                <option value="school-workshop">School Workshops</option>
+                                <option value="it-support-plan">IT Support Plans</option>
+                                <option value="website-development">Website Development</option>
+                                <option value="consultation">General Consultation</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                            <div class="form-error" id="serviceError"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">
+                            <i class="fas fa-tag"></i> Subject *
+                        </label>
+                        <input type="text" id="subject" name="subject" class="form-input" required 
+                               placeholder="Brief description of your inquiry">
+                        <div class="form-error" id="subjectError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">
+                            <i class="fas fa-comment"></i> Your Message *
+                        </label>
+                        <textarea id="message" name="message" class="form-textarea" required 
+                                  placeholder="Please provide details about your inquiry..." rows="5" minlength="10"></textarea>
+                        <div class="form-counter">
+                            <span id="charCount">0</span> / 500 characters
+                        </div>
+                        <div class="form-error" id="messageError"></div>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                        <label for="newsletter" class="checkbox-label">
+                            Subscribe to our newsletter for tech tips and workshop updates
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                            <span class="spinner" id="formSpinner" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                        
+                        <button type="reset" class="btn btn-secondary reset-btn">
+                            <i class="fas fa-redo"></i> Clear Form
+                        </button>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <p class="form-note">
+                            <i class="fas fa-shield-alt"></i> Your information is secure and will only be used to respond to your inquiry.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="container">
@@ -1123,7 +1469,6 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                
                     <p>Empowering businesses with technology solutions and educating the next generation of innovators across South Africa.</p>
                 </div>
                 
@@ -1158,7 +1503,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Monarch Technologies. All rights reserved.website created by monarch Technologies (pty) Ltd</p>
+                <p>&copy; 2025 Monarch Technologies. All rights reserved. Website created by Monarch Technologies (pty) Ltd</p>
             </div>
         </div>
     </footer>
@@ -1212,7 +1557,7 @@
             },
             {
                 title: "Robotics & Automation",
-                description: "we give education on robots with fun interactive projects, learning engineering concepts and automation principles.",
+                description: "We give education on robots with fun interactive projects, learning engineering concepts and automation principles.",
                 icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M7.5,13A2.5,2.5 0 0,0 5,15.5A2.5,2.5 0 0,0 7.5,18A2.5,2.5 0 0,0 10,15.5A2.5,2.5 0 0,0 7.5,13M16.5,13A2.5,2.5 0 0,0 14,15.5A2.5,2.5 0 0,0 16.5,18A2.5,2.5 0 0,0 19,15.5A2.5,2.5 0 0,0 16.5,13Z"/></svg>`
             },
             {
@@ -1227,12 +1572,12 @@
             },
             {
                 title: "Web Development Projects",
-                description: "get to show students how a website is created, introducing them to HTML, CSS, and JavaScript with practical projects.",
+                description: "Get to show students how a website is created, introducing them to HTML, CSS, and JavaScript with practical projects.",
                 icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,18C11.17,18 10.5,17.33 10.5,16.5C10.5,15.67 11.17,15 12,15C12.83,15 13.5,15.67 13.5,16.5C13.5,17.33 12.83,18 12,18M18.75,10H5.25L12,4.75L18.75,10M17.62,10.35L12,5.5L6.38,10.35C6.15,10.54 6,10.83 6,11.14V19C6,19.5 6.5,20 7,20H17C17.5,20 18,19.5 18,19V11.14C18,10.83 17.85,10.54 17.62,10.35Z"/></svg>`
             },
             {
-                title: "emphasizing fun Engagement",
-                description: "learn,Play and explore:hands-on IT workshop with exciting games.",
+                title: "Emphasizing Fun Engagement",
+                description: "Learn, play and explore: hands-on IT workshop with exciting games.",
                 icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6,7H18A5,5 0 0,1 23,12A5,5 0 0,1 18,17C16.36,17 14.91,16.21 14,15H10C9.09,16.21 7.64,17 6,17A5,5 0 0,1 1,12A5,5 0 0,1 6,7M19.75,9.5A1.25,1.25 0 0,0 18.5,10.75A1.25,1.25 0 0,0 19.75,12A1.25,1.25 0 0,0 21,10.75A1.25,1.25 0 0,0 19.75,9.5M17.25,12A1.25,1.25 0 0,0 16,13.25A1.25,1.25 0 0,0 17.25,14.5A1.25,1.25 0 0,0 18.5,13.25A1.25,1.25 0 0,0 17.25,12M5,9V11H3V13H5V15H7V13H9V11H7V9H5Z"/></svg>`
             }
         ];
@@ -1245,12 +1590,12 @@
                 period: "/month",
                 badge: "Popular",
                 features: [
-                    "Password and account",
+                    "Password and account management",
                     "Software updates & security patches",
                     "Antivirus & malware protection",
                     "Email support (24-hour response)",
                     "Monthly system health reports",
-                    "Basic network and pc's troubleshooting"
+                    "Basic network and PC troubleshooting"
                 ],
                 image: "plan-basic.jpg"
             },
@@ -1279,8 +1624,8 @@
                     "Everything in Business Plan",
                     "Full IT infrastructure management",
                     "Unlimited on-site support",
-                    "Advanced system Hardening ",
-                    "Custom Security Configurations",
+                    "Advanced system hardening",
+                    "Custom security configurations",
                     "24/7 emergency support line",
                     "Annual IT strategy planning"
                 ],
@@ -1379,6 +1724,204 @@
                 });
             });
 
+            // Contact Form Functionality
+            const contactForm = document.getElementById('contactForm');
+            const formStatus = document.getElementById('formStatus');
+            const submitBtn = document.getElementById('submitBtn');
+            const formSpinner = document.getElementById('formSpinner');
+            const charCount = document.getElementById('charCount');
+            const messageInput = document.getElementById('message');
+
+            // Character counter for message
+            if (messageInput) {
+                messageInput.addEventListener('input', function() {
+                    const length = this.value.length;
+                    charCount.textContent = length;
+                    
+                    if (length > 500) {
+                        this.value = this.value.substring(0, 500);
+                        charCount.textContent = 500;
+                    }
+                });
+            }
+
+            // Form validation
+            function validateForm() {
+                let isValid = true;
+                const errors = {};
+                
+                // Clear previous errors
+                document.querySelectorAll('.form-error').forEach(el => el.textContent = '');
+                document.querySelectorAll('.form-input, .form-select, .form-textarea').forEach(el => {
+                    el.classList.remove('error', 'success');
+                });
+                
+                // Validate name
+                const name = document.getElementById('name');
+                if (!name.value.trim() || name.value.trim().length < 2) {
+                    errors.name = 'Please enter a valid name (at least 2 characters)';
+                    name.classList.add('error');
+                    isValid = false;
+                } else {
+                    name.classList.add('success');
+                }
+                
+                // Validate email
+                const email = document.getElementById('email');
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email.value || !emailRegex.test(email.value)) {
+                    errors.email = 'Please enter a valid email address';
+                    email.classList.add('error');
+                    isValid = false;
+                } else {
+                    email.classList.add('success');
+                }
+                
+                // Validate phone (optional but must be valid if provided)
+                const phone = document.getElementById('phone');
+                if (phone.value) {
+                    const phoneRegex = /^[\d\s\+\-\(\)]{10,}$/;
+                    if (!phoneRegex.test(phone.value.replace(/\s/g, ''))) {
+                        errors.phone = 'Please enter a valid phone number';
+                        phone.classList.add('error');
+                        isValid = false;
+                    } else {
+                        phone.classList.add('success');
+                    }
+                }
+                
+                // Validate service type
+                const serviceType = document.getElementById('serviceType');
+                if (!serviceType.value) {
+                    errors.service = 'Please select a service type';
+                    serviceType.classList.add('error');
+                    isValid = false;
+                } else {
+                    serviceType.classList.add('success');
+                }
+                
+                // Validate subject
+                const subject = document.getElementById('subject');
+                if (!subject.value.trim() || subject.value.trim().length < 3) {
+                    errors.subject = 'Please enter a subject (at least 3 characters)';
+                    subject.classList.add('error');
+                    isValid = false;
+                } else {
+                    subject.classList.add('success');
+                }
+                
+                // Validate message
+                const message = document.getElementById('message');
+                if (!message.value.trim() || message.value.trim().length < 10) {
+                    errors.message = 'Please enter a message (at least 10 characters)';
+                    message.classList.add('error');
+                    isValid = false;
+                } else {
+                    message.classList.add('success');
+                }
+                
+                // Display errors
+                Object.keys(errors).forEach(key => {
+                    const errorEl = document.getElementById(`${key}Error`);
+                    if (errorEl) errorEl.textContent = errors[key];
+                });
+                
+                return isValid;
+            }
+
+            // Form submission
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    // Validate form
+                    if (!validateForm()) {
+                        formStatus.textContent = 'Please fix the errors above.';
+                        formStatus.className = 'form-status error';
+                        formStatus.style.display = 'block';
+                        return;
+                    }
+                    
+                    // Show loading state
+                    submitBtn.disabled = true;
+                    formSpinner.style.display = 'inline-block';
+                    submitBtn.innerHTML = 'Sending... <span class="spinner" id="formSpinner"><i class="fas fa-spinner fa-spin"></i></span>';
+                    
+                    try {
+                        const formData = new FormData(this);
+                        
+                        // Send to Formspree
+                        const response = await fetch(this.action, {
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+                        
+                        // Handle response
+                        if (response.ok) {
+                            // Success
+                            formStatus.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you within 24 hours.';
+                            formStatus.className = 'form-status success';
+                            formStatus.style.display = 'block';
+                            
+                            // Reset form
+                            contactForm.reset();
+                            charCount.textContent = '0';
+                            
+                            // Scroll to status message
+                            formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            
+                            // Reset form styling
+                            document.querySelectorAll('.form-input, .form-select, .form-textarea').forEach(el => {
+                                el.classList.remove('success', 'error');
+                            });
+                        } else {
+                            // Error from Formspree
+                            const data = await response.json();
+                            throw new Error(data.error || 'Something went wrong');
+                        }
+                    } catch (error) {
+                        // Network error or Formspree error
+                        console.error('Form submission error:', error);
+                        formStatus.textContent = 'Sorry, there was an error sending your message. Please try again or contact us directly at monarchtech25@gmail.com';
+                        formStatus.className = 'form-status error';
+                        formStatus.style.display = 'block';
+                        
+                        // Scroll to error
+                        formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    } finally {
+                        // Reset button state
+                        submitBtn.disabled = false;
+                        formSpinner.style.display = 'none';
+                        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+                    }
+                });
+            }
+
+            // Real-time validation
+            document.querySelectorAll('.form-input, .form-select, .form-textarea').forEach(input => {
+                input.addEventListener('blur', () => {
+                    if (input.value.trim()) {
+                        // Only validate non-empty fields on blur
+                        validateForm();
+                    }
+                });
+            });
+
+            // Reset form button
+            document.querySelector('.reset-btn')?.addEventListener('click', function() {
+                setTimeout(() => {
+                    document.querySelectorAll('.form-error').forEach(el => el.textContent = '');
+                    document.querySelectorAll('.form-input, .form-select, .form-textarea').forEach(el => {
+                        el.classList.remove('error', 'success');
+                    });
+                    formStatus.style.display = 'none';
+                    charCount.textContent = '0';
+                }, 0);
+            });
+
             // Animate elements on scroll
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -1415,8 +1958,4 @@
         });
     </script>
 </body>
-
 </html>
-
-
-
