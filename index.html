@@ -3,13 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monarch Technologies | IT Solutions & School Workshops</title>
-    <meta name="description" content="Professional IT services for businesses and technology education workshops for schools across South Africa.">
+    
+    <!-- SEO Meta Tags -->
+    <title>Monarch Technologies | IT Solutions & School Workshops South Africa</title>
+    <meta name="description" content="Professional IT services for businesses and technology education workshops for schools across South Africa. Reliable IT support, cybersecurity, web development, and school workshops.">
+    <meta name="keywords" content="IT services South Africa, school workshops, business IT support, cybersecurity, web development, IT education, technology workshops, managed IT services">
+    <meta name="author" content="Monarch Technologies">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Monarch Technologies | IT Solutions & School Workshops">
+    <meta property="og:description" content="Professional IT services for businesses and technology education workshops for schools across South Africa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://monarchtechnologies.co.za">
+    <meta property="og:image" content="https://monarchtechnologies.co.za/logo.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://monarchtechnologies.co.za">
     
     <!-- Preload critical resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data / Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Monarch Technologies",
+      "description": "Professional IT services for businesses and technology education workshops for schools across South Africa",
+      "url": "https://monarchtechnologies.co.za",
+      "logo": "https://monarchtechnologies.co.za/logo.jpg",
+      "telephone": "+27606821708",
+      "email": "monarchtech25@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "South Africa"
+      },
+      "serviceType": ["IT Support", "Web Development", "Cybersecurity", "School Workshops"],
+      "areaServed": {
+        "@type": "Country",
+        "name": "South Africa"
+      },
+      "sameAs": [
+        "https://www.instagram.com/monarch_technologies25",
+        "https://www.facebook.com/share/14PAVDBLU5Q/"
+      ]
+    }
+    </script>
     
     <!-- Inline critical CSS -->
     <style>
@@ -1095,15 +1142,48 @@
             }
         }
 
-        /* Animation */
+        /* Enhanced Animations */
         @keyframes fadeUp {
             from {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(40px);
             }
             to {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeLeft {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeRight {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
             }
         }
 
@@ -1113,8 +1193,25 @@
             100% { transform: scale(1); }
         }
 
+        .fade-up {
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        .fade-down {
+            animation: fadeDown 0.8s ease forwards;
+        }
+
+        .fade-left {
+            animation: fadeLeft 0.8s ease forwards;
+        }
+
+        .fade-right {
+            animation: fadeRight 0.8s ease forwards;
+        }
+
         .fade-in {
-            animation: fadeUp 0.6s ease forwards;
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards;
         }
 
         .submit-btn:active {
@@ -1177,7 +1274,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo-container">
-                    <img src="logo.jpg" alt="Monarch Technologies" class="logo" width="160" height="40" loading="eager">
+                    <img src="logo.jpg" alt="Monarch Technologies - Professional IT Services South Africa" class="logo" width="160" height="40" loading="eager">
                 </div>
                 
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
@@ -1186,9 +1283,9 @@
                 
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#services">IT Services</a></li>
                     <li><a href="#workshops">School Workshops</a></li>
-                    <li><a href="#pricing">IT Support Plans</a></li>
+                    <li><a href="#pricing">Support Plans</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -1198,7 +1295,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content fade-down">
                 <h1>Empowering South Africa Through Technology</h1>
                 <p>Professional IT solutions for businesses and transformative technology education for the next generation of innovators.</p>
                 <div class="hero-buttons">
@@ -1220,19 +1317,19 @@
     <section class="stats-section">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-item">
+                <div class="stat-item fade-left">
                     <div class="stat-number">100%</div>
                     <div class="stat-label">Professionalism</div>
                 </div>
-                <div class="stat-item">
+                <div class="stat-item fade-up">
                     <div class="stat-number">2</div>
                     <div class="stat-label">Schools Served</div>
                 </div>
-                <div class="stat-item">
+                <div class="stat-item fade-down">
                     <div class="stat-number">99.9%</div>
                     <div class="stat-label">Uptime Guarantee</div>
                 </div>
-                <div class="stat-item">
+                <div class="stat-item fade-right">
                     <div class="stat-number">150+</div>
                     <div class="stat-label">Students Educated</div>
                 </div>
@@ -1243,8 +1340,8 @@
     <!-- Services Section -->
     <section class="services-section" id="services">
         <div class="container">
-            <h2 class="section-title">Our IT Services</h2>
-            <p class="section-subtitle">Comprehensive technology solutions to keep your business running smoothly and securely</p>
+            <h2 class="section-title fade-down">Our IT Services</h2>
+            <p class="section-subtitle fade-up">Comprehensive technology solutions to keep your business running smoothly and securely</p>
             
             <div class="services-grid" id="servicesGrid">
                 <!-- Services populated by JavaScript -->
@@ -1255,14 +1352,14 @@
     <!-- School Workshops Section -->
     <section class="workshops-section" id="workshops">
         <div class="container">
-            <h2 class="section-title">IT School Workshops</h2>
-            <p class="section-subtitle">Transformative technology education programs designed for primary and high schools</p>
+            <h2 class="section-title fade-down">IT School Workshops</h2>
+            <p class="section-subtitle fade-up">Transformative technology education programs designed for primary and high schools</p>
             
             <div class="workshop-grid" id="workshopGrid">
                 <!-- Workshops populated by JavaScript -->
             </div>
             
-            <div class="workshop-cta">
+            <div class="workshop-cta fade-up">
                 <h3>Custom Workshop Packages for Your School</h3>
                 <p>We create tailored IT education programs that align with your school's curriculum and technology goals. Contact us for a customized quotation!</p>
                 <a href="#contact" class="btn btn-accent">
@@ -1275,8 +1372,8 @@
     <!-- IT Support Monthly Services Section -->
     <section class="pricing-section" id="pricing">
         <div class="container">
-            <h2 class="section-title">Managed IT Support Plans</h2>
-            <p class="section-subtitle">Predictable monthly pricing with enterprise-grade support for businesses</p>
+            <h2 class="section-title fade-down">Managed IT Support Plans</h2>
+            <p class="section-subtitle fade-up">Predictable monthly pricing with enterprise-grade support for businesses</p>
             
             <div class="pricing-grid" id="pricingGrid">
                 <!-- Pricing cards populated by JavaScript -->
@@ -1287,7 +1384,7 @@
     <!-- About Section -->
     <section class="about-section">
         <div class="container">
-            <div class="about-content">
+            <div class="about-content fade-up">
                 <p class="about-text">Monarch Technologies provides reliable, affordable, and future-ready IT services for businesses while empowering the next generation through comprehensive technology education programs across South Africa.</p>
             </div>
         </div>
@@ -1296,7 +1393,7 @@
     <!-- Contact Form Section -->
     <div class="contact-form-section">
         <div class="container">
-            <div class="form-wrapper">
+            <div class="form-wrapper fade-up">
                 <div class="form-header">
                     <h3 class="form-title">Send Us a Message</h3>
                     <p class="form-subtitle">Get in touch with us directly using the form below. We'll respond within 24 hours.</p>
@@ -1407,11 +1504,11 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Contact us for business IT solutions or to discuss school workshop programs</p>
+            <h2 class="section-title fade-down">Get In Touch</h2>
+            <p class="section-subtitle fade-up">Contact us for business IT solutions or to discuss school workshop programs</p>
             
             <div class="contact-container">
-                <div class="contact-info">
+                <div class="contact-info fade-left">
                     <div class="contact-details">
                         <div class="contact-item">
                             <div class="contact-icon">
@@ -1448,17 +1545,17 @@
                     </div>
                     
                     <div class="social-links">
-                        <a href="https://www.instagram.com/monarch_technologies25" target="_blank" class="social-link" aria-label="Instagram">
+                        <a href="https://www.instagram.com/monarch_technologies25" target="_blank" class="social-link" aria-label="Follow Monarch Technologies on Instagram">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
                         </a>
-                        <a href="https://www.facebook.com/share/14PAVDBLU5Q/" target="_blank" class="social-link" aria-label="Facebook">
+                        <a href="https://www.facebook.com/share/14PAVDBLU5Q/" target="_blank" class="social-link" aria-label="Follow Monarch Technologies on Facebook">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>
                         </a>
                     </div>
                 </div>
                 
-                <div class="contact-image">
-                    <img src="contact-bg.jpg" alt="Monarch Technologies Office" loading="lazy" width="600" height="400">
+                <div class="contact-image fade-right">
+                    <img src="contact-bg.jpg" alt="Monarch Technologies Office - Professional IT Services South Africa" loading="lazy" width="600" height="400">
                 </div>
             </div>
         </div>
@@ -1468,11 +1565,11 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-logo fade-left">
                     <p>Empowering businesses with technology solutions and educating the next generation of innovators across South Africa.</p>
                 </div>
                 
-                <div class="footer-links">
+                <div class="footer-links fade-up">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -1483,7 +1580,7 @@
                     </ul>
                 </div>
                 
-                <div class="footer-contact">
+                <div class="footer-contact fade-up">
                     <h4>Contact Info</h4>
                     <p><i class="fas fa-envelope"></i> monarchtech25@gmail.com</p>
                     <p><i class="fas fa-phone"></i> 060 682 1708</p>
@@ -1491,7 +1588,7 @@
                     <p><i class="fas fa-graduation-cap"></i> School Workshops Available</p>
                 </div>
                 
-                <div class="footer-links">
+                <div class="footer-links fade-right">
                     <h4>Our Services</h4>
                     <ul>
                         <li><a href="#services">IT Support & Troubleshooting</a></li>
@@ -1502,7 +1599,7 @@
                 </div>
             </div>
             
-            <div class="footer-bottom">
+            <div class="footer-bottom fade-up">
                 <p>&copy; 2025 Monarch Technologies. All rights reserved. Website created by Monarch Technologies (pty) Ltd</p>
             </div>
         </div>
@@ -1635,11 +1732,11 @@
 
         // Initialize the page
         document.addEventListener('DOMContentLoaded', function() {
-            // Populate services
+            // Populate services with enhanced animations
             const servicesGrid = document.getElementById('servicesGrid');
             servicesData.forEach((service, index) => {
                 const serviceCard = document.createElement('div');
-                serviceCard.className = 'service-card fade-in';
+                serviceCard.className = 'service-card';
                 serviceCard.style.animationDelay = `${index * 0.1}s`;
                 serviceCard.innerHTML = `
                     <div class="service-icon">${service.icon}</div>
@@ -1650,13 +1747,21 @@
                     </a>
                 `;
                 servicesGrid.appendChild(serviceCard);
+                
+                // Add different animation directions
+                setTimeout(() => {
+                    if (index % 4 === 0) serviceCard.classList.add('fade-left');
+                    else if (index % 4 === 1) serviceCard.classList.add('fade-up');
+                    else if (index % 4 === 2) serviceCard.classList.add('fade-right');
+                    else serviceCard.classList.add('fade-down');
+                }, 100);
             });
 
-            // Populate workshops
+            // Populate workshops with enhanced animations
             const workshopGrid = document.getElementById('workshopGrid');
             workshopsData.forEach((workshop, index) => {
                 const workshopCard = document.createElement('div');
-                workshopCard.className = 'workshop-card fade-in';
+                workshopCard.className = 'workshop-card';
                 workshopCard.style.animationDelay = `${index * 0.1}s`;
                 workshopCard.innerHTML = `
                     <div class="workshop-icon">${workshop.icon}</div>
@@ -1667,13 +1772,21 @@
                     </a>
                 `;
                 workshopGrid.appendChild(workshopCard);
+                
+                // Add different animation directions
+                setTimeout(() => {
+                    if (index % 4 === 0) workshopCard.classList.add('fade-left');
+                    else if (index % 4 === 1) workshopCard.classList.add('fade-up');
+                    else if (index % 4 === 2) workshopCard.classList.add('fade-right');
+                    else workshopCard.classList.add('fade-down');
+                }, 100);
             });
 
-            // Populate pricing cards
+            // Populate pricing cards with enhanced animations
             const pricingGrid = document.getElementById('pricingGrid');
             pricingData.forEach((plan, index) => {
                 const pricingCard = document.createElement('div');
-                pricingCard.className = 'pricing-card fade-in';
+                pricingCard.className = 'pricing-card';
                 pricingCard.style.animationDelay = `${index * 0.1}s`;
                 pricingCard.innerHTML = `
                     <div class="pricing-image" style="background-image: url('${plan.image}')">
@@ -1691,6 +1804,13 @@
                     </div>
                 `;
                 pricingGrid.appendChild(pricingCard);
+                
+                // Add different animation directions
+                setTimeout(() => {
+                    if (index === 0) pricingCard.classList.add('fade-left');
+                    else if (index === 1) pricingCard.classList.add('fade-up');
+                    else pricingCard.classList.add('fade-right');
+                }, 100);
             });
 
             // Mobile menu toggle
@@ -1704,6 +1824,7 @@
                     if (navLinks.classList.contains('active')) {
                         icon.classList.remove('fa-bars');
                         icon.classList.add('fa-times');
+                        navLinks.classList.add('fade-down');
                     } else {
                         icon.classList.remove('fa-times');
                         icon.classList.add('fa-bars');
@@ -1839,6 +1960,7 @@
                         formStatus.textContent = 'Please fix the errors above.';
                         formStatus.className = 'form-status error';
                         formStatus.style.display = 'block';
+                        formStatus.classList.add('fade-down');
                         return;
                     }
                     
@@ -1865,6 +1987,7 @@
                             formStatus.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you within 24 hours.';
                             formStatus.className = 'form-status success';
                             formStatus.style.display = 'block';
+                            formStatus.classList.add('fade-up');
                             
                             // Reset form
                             contactForm.reset();
@@ -1888,6 +2011,7 @@
                         formStatus.textContent = 'Sorry, there was an error sending your message. Please try again or contact us directly at monarchtech25@gmail.com';
                         formStatus.className = 'form-status error';
                         formStatus.style.display = 'block';
+                        formStatus.classList.add('fade-down');
                         
                         // Scroll to error
                         formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -1922,11 +2046,32 @@
                 }, 0);
             });
 
-            // Animate elements on scroll
+            // Enhanced animation observer
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
+                        // Already animated elements skip
+                        if (entry.target.classList.contains('fade-left') || 
+                            entry.target.classList.contains('fade-right') || 
+                            entry.target.classList.contains('fade-up') || 
+                            entry.target.classList.contains('fade-down')) {
+                            return;
+                        }
+                        
+                        // Add random animation class based on element position
+                        const rect = entry.target.getBoundingClientRect();
+                        const viewportHeight = window.innerHeight;
+                        const viewportWidth = window.innerWidth;
+                        
+                        if (rect.top < viewportHeight / 3) {
+                            entry.target.classList.add('fade-down');
+                        } else if (rect.top < viewportHeight / 1.5) {
+                            entry.target.classList.add('fade-up');
+                        } else if (rect.left < viewportWidth / 2) {
+                            entry.target.classList.add('fade-right');
+                        } else {
+                            entry.target.classList.add('fade-left');
+                        }
                     }
                 });
             }, {
@@ -1934,9 +2079,14 @@
                 rootMargin: '0px 0px -50px 0px'
             });
 
-            // Observe elements for animation
-            document.querySelectorAll('.service-card, .pricing-card, .workshop-card, .about-content, .contact-info, .contact-image, .stat-item').forEach(el => {
-                observer.observe(el);
+            // Observe all elements for animation
+            document.querySelectorAll('section, .container > *').forEach(el => {
+                if (!el.classList.contains('fade-left') && 
+                    !el.classList.contains('fade-right') && 
+                    !el.classList.contains('fade-up') && 
+                    !el.classList.contains('fade-down')) {
+                    observer.observe(el);
+                }
             });
 
             // Smooth scroll for anchor links
@@ -1955,6 +2105,25 @@
                     }
                 });
             });
+
+            // Add animation to existing elements on load
+            setTimeout(() => {
+                document.querySelectorAll('.section-title, .section-subtitle').forEach((el, index) => {
+                    setTimeout(() => {
+                        if (index % 2 === 0) el.classList.add('fade-down');
+                        else el.classList.add('fade-up');
+                    }, index * 100);
+                });
+                
+                // Add animation to contact items
+                document.querySelectorAll('.contact-item').forEach((item, index) => {
+                    setTimeout(() => {
+                        if (index % 3 === 0) item.classList.add('fade-left');
+                        else if (index % 3 === 1) item.classList.add('fade-up');
+                        else item.classList.add('fade-right');
+                    }, index * 150);
+                });
+            }, 500);
         });
     </script>
 </body>
